@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>vn.funix</groupId>
+		<artifactId>PRJ321x-Project5</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>PRJ321x-Project5-BLL</artifactId>
+	<name>PRJ321x-Project5-BLL</name>
+
+	<dependencies>
+
+		<!-- PRJ321x-Project5-DAL java -->
+		<dependency>
+			<groupId>vn.funix</groupId>
+			<artifactId>PRJ321x-Project5-DAL</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- PRJ321x-Project5-Core java -->
+		<dependency>
+			<groupId>vn.funix</groupId>
+			<artifactId>PRJ321x-Project5-Core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>${commons-beanutils.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>${javax.mail.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>PRJ321x-Project5-BLL</finalName>
+	</build>
+</project>

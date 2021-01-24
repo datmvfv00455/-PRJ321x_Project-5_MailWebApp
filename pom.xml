@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>vn.funix</groupId>
+	<artifactId>PRJ321x-Project5</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<junit.version>4.12</junit.version>
+		<javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+		<jstl.version>1.2</jstl.version>
+		<commons-beanutils.version>1.9.3</commons-beanutils.version>
+		<javax.mail.version>1.4</javax.mail.version>
+		<org.gson.version>2.8.5</org.gson.version>
+		<mysql.connector.version>8.0.19</mysql.connector.version>
+		<org.hibernate.version>5.4.4.Final</org.hibernate.version>
+		<org.projectlombok.version>1.18.16</org.projectlombok.version>
+	</properties>
+
+	<dependencies>
+	
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${org.projectlombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
+	<modules>
+		<module>PRJ321x-Project5-GUI</module>
+		<module>PRJ321x-Project5-BLL</module>
+		<module>PRJ321x-Project5-Core</module>
+		<module>PRJ321x-Project5-DAL</module>
+	</modules>
+</project>
